@@ -8,10 +8,18 @@
 /******************************
     GENERAL STYLING
 ******************************/
+.html {
+  max-width: 100% !important;
+  width: 100vw !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  margin: 0 !important;
+}
+
 .body {
 	padding: 0;
 	margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .row {
@@ -26,6 +34,16 @@
 	height: auto;
 	background-color: white;
 	margin: 0;
+}
+
+.white {
+	background: white;
+}
+
+.clipper {
+  width: 50vw !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /******************************
@@ -59,18 +77,35 @@ nav li a {
 ******************************/
 .section#home {
 	background-color: transparent;
+  overflow-x: hidden !important;
 }
 
 .section img {
 	width: 100%;
 	position: fixed;
-	z-index: -1;
+	z-index: -2;
+}
+
+.blue {
+  position: absolute;
+  overflow-x: hidden;
+  z-index: -1;
+  background: #0048ab;
+  opacity: .7;
+  background-size: cover;
+  height: 125%;
+  width: 125%;
+  top: 1.5in;
+  left: -2in;
+  -ms-transform: rotate(15deg); /* IE 9 */
+  -webkit-transform: rotate(15deg); /* Safari */
+  transform: rotate(15deg);
 }
 
 .text.home {
 	color: white;
 	padding-top: 120px;
-	margin: 0px 15%;
+	margin: 0px 25% 0px 10%;
 }
 
 .text.home h1 {
@@ -95,13 +130,7 @@ nav li a {
   top: -1in;
   padding: 5%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .25);
-}
-
-.white {
-	background: white;
-}
-
-.light {
+  border-radius: 2px;
 }
 
 footer {
