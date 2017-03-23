@@ -133,6 +133,15 @@ nav li a {
   border-radius: 2px;
 }
 
+#products {
+  top: -.25in;
+}
+
+#contact {
+  border-top: 1px solid whitesmoke;
+  margin-bottom: .5in;
+}
+
 footer {
 	border-top: 1px solid whitesmoke;
 	padding: 18px;

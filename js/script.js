@@ -9,3 +9,14 @@ $(function() {
     });
 
 });
+
+
+// Display about section upon scrolling a small amount
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 20) {
+    $('#about').fadeIn();
+  } else {
+    $('#about').fadeOut();
+  }
+});
