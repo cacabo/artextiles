@@ -10,20 +10,22 @@ $(function() {
 });
 
 
-// Display about section upon scrolling a small amount
+// Display welcome section upon scrolling a small amount
 // Not displayed to begin with
 // $(function() {
-//   $('#about').fadeOut(0);
+//   $('#welcome').fadeOut(0);
 // })
 
-//Shifting the about section up upon scroll:
+//Shifting the welcome section up upon scroll:
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 20) {
-    $('#about').css("top", "-1in");
+    $('#welcome').css("top", "-15vh");
+    $('.text.home').css("padding-top", "30vh");
   } else {
-    $('#about').css("top", "0in");
+    $('#welcome').css("top", "0in");
+    $('.text.home').css("padding-top", "40vh");
   }
 });
 

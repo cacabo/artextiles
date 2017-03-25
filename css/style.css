@@ -28,17 +28,19 @@ h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Roboto', sans-serif !important;
 }
 
-.row {
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+div.row {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .section {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: white;
 	margin: 0;
 }
 
@@ -52,6 +54,15 @@ h1, h2, h3, h4, h5, h6, a, p {
   overflow-y: hidden;
 }
 
+.section h1 {
+  color: #0048ab;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, .2);
+}
+
+.section h4 {
+  font-weight: normal;
+  line-height: 1.5;
+}
 /******************************
     NAVIGATION
 ******************************/
@@ -69,7 +80,7 @@ nav li a {
 
 .navbar-fixed-top {
 	border: 0px solid transparent;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, .25);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
 }
 
 .active a {
@@ -86,15 +97,31 @@ nav a {
   width: 1px;
   background: #D8D8D8;
 }
+
 /******************************
-    SECTION SPECIFIC
+    SECTION GENERAL
+******************************/
+.section img {
+  width: 100%;
+}
+
+.gradient {
+  background: whitesmoke; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, whitesmoke); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, whitesmoke); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, whitesmoke); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, whitesmoke); /* Standard syntax */
+}
+
+/******************************
+    HOME
 ******************************/
 .section#home {
 	background-color: transparent;
   overflow-x: hidden !important;
 }
 
-.section img {
+#home img {
 	width: 100%;
 	position: fixed;
 	z-index: -2;
@@ -118,8 +145,9 @@ nav a {
 
 .text.home {
 	color: white;
-	padding-top: 120px;
+	padding-top: 40vh;
 	margin: 0px 25% 0px 10%;
+  transition: all 0.5s ease;
 }
 
 .text.home h1 {
@@ -139,21 +167,24 @@ nav a {
 }
 
 
-#about {
+#welcome {
   border: 1px solid whitesmoke;
-  /*top: -.5in;*/
   padding: 5%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, .25);
+  padding-top: 2.5%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
   border-radius: 2px;
   transition: all 0.25s ease;
+  background: white;
 }
 
 .up {
   top: -1in;
 }
 
+#about {
+}
+
 #products {
-  top: -.25in;
 }
 
 #contact {
@@ -161,6 +192,21 @@ nav a {
   margin-bottom: .5in;
 }
 
+.map-wrapper {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
+  border-radius: 2px;
+  padding: 0px;
+}
+
+iframe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/******************************
+    FOOTER
+******************************/
 footer {
 	border-top: 1px solid whitesmoke;
 	padding: 18px;
