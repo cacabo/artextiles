@@ -29,6 +29,7 @@ $(document).scroll(function() {
   }
 });
 
+//Set height of dividers to that of the navbar
 $(function() {
   var ref = $('#top');
   $('.divider').css("height", ref.height());
