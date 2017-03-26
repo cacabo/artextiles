@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Roboto', sans-serif !important;
 }
 
+p, h6, h5, h4 {
+  line-height: 1.5;
+}
+
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
@@ -55,7 +59,7 @@ div.row {
   overflow-y: hidden;
 }
 
-.section h1 {
+.section h1, .quality h1 {
   color: #0048ab;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, .2);
 }
@@ -115,6 +119,10 @@ nav a {
 
 .top-pad {
   padding-top: 5vh;
+}
+
+.top-padded {
+  padding-top: 10vh;
 }
 
 .t-pad {
@@ -223,6 +231,18 @@ img.left {
 #contact {
   border-top: 1px solid whitesmoke;
   margin-bottom: .5in;
+}
+
+#quality {
+  position: absolute;
+  z-index: 4;
+}
+
+.quality {
+  z-index: 4;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
+  top: -20vh;
 }
 
 .map-wrapper {
