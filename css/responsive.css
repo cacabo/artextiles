@@ -49,8 +49,8 @@
 	Intended for small window sizes and phones
 ******************************/
 
-@media only screen and ((max-width: 992px) or ((-webkit-min-device-pixel-ratio: 2)
-and (max-device-width: 736px))) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+and (max-device-width: 736px) {
   .no-display-mobile {
     display: none;
   }
@@ -61,11 +61,47 @@ and (max-device-width: 736px))) {
 
   .img-wrap-right {
     padding: 0px;
-    padding-bottom: 5vh;
+    padding-bottom: 7.5vh;
   }
 }
 
-@media screen and (min-width: 992px) {
+/******************************
+	For smaller screen sizes
+******************************/
+
+@media only screen and (max-width: 991px) {
+  .no-display-mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display = block;
+  }
+
+  .bord-left {
+    border-top: 1px solid #D8D8D8;
+    border-left: 0px;
+  }
+
+  .img-wrap-right {
+    padding: 0px;
+    padding-bottom: 7.5vh;
+  }
+
+  /*Having blue take up entire background image not just a triangle*/
+  .blue {
+    opacity: .7;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 991px) {
   .no-display-mobile {
     display: block;
   }

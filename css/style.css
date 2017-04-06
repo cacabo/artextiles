@@ -87,6 +87,10 @@ nav li a {
   background: white;
 }
 
+.navbar, .navbar-collapse {
+  overflow: hidden !important;
+}
+
 .navbar-header img {
 	height: 48px;
 	padding-right: 18px;
@@ -102,7 +106,6 @@ nav li a {
 .active a {
 	background: inherit !important;
 	color: black !important;
-	border-bottom: 3px solid black;
 }
 
 nav a {
@@ -112,6 +115,50 @@ nav a {
 .divider {
   width: 1px;
   background: #D8D8D8;
+}
+
+.bord-left {
+  border-left: 1px solid #D8D8D8;
+}
+
+button.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: white !important;
+}
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
 }
 
 /******************************
@@ -281,8 +328,8 @@ textarea.form-control {
 textarea.form-control:focus, input.form-control:focus {
   border-radius: 0;
   border: 0px solid transparent;
-  border-bottom: 1px solid #D8D8D8;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+  border-bottom: 1px solid black;
+  box-shadow: none;
 }
 
 /******************************
