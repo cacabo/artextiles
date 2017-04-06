@@ -59,7 +59,7 @@ div.row {
   overflow-y: hidden;
 }
 
-.section h1, .quality h3 {
+.section h1 {
   color: #0048ab;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, .2);
 }
@@ -83,6 +83,10 @@ nav li a {
 	border-bottom: 3px solid transparent;
 }
 
+.navbar {
+  background: white;
+}
+
 .navbar-header img {
 	height: 48px;
 	padding-right: 18px;
@@ -92,7 +96,7 @@ nav li a {
 
 .navbar-fixed-top {
 	border: 0px solid transparent;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
 }
 
 .active a {
@@ -137,13 +141,8 @@ nav a {
   padding-bottom: 2.5vh;
 }
 
-.border-right {
-  border-left: 1px solid #D8D8D8;
-  padding-left: 2.5vw;
-}
-
-img.left {
-  border-right: 10px solid #0048ab;
+.line-above {
+  border-top: 8px solid #0048ab;
 }
 
 .gradient {
@@ -235,8 +234,6 @@ img.left {
 }
 
 #quality {
-  position: absolute;
-  z-index: 4;
 }
 
 .quality {
