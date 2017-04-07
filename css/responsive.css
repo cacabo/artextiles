@@ -84,7 +84,11 @@ and (max-device-width: 736px) {
   }
 
   .img-wrap-right {
+    margin: 0px;
     padding: 0px;
+    width: auto;
+    height: auto;
+    padding-left: 7.5vh;
     padding-bottom: 7.5vh;
   }
 

@@ -34,3 +34,15 @@ $(function() {
   var ref = $('#top');
   $('.divider').css("height", ref.height());
 });
+
+//Set height of image wrapper to that of the about text
+$(function() {
+  var ref = $('#about-text');
+  $('#about-img').css("height", ref.height());
+});
+
+//Set height of image wrapper to that of the quality text
+$(function() {
+  var ref = $('#quality-text');
+  $('#quality-img').css("height", ref.height());
+});
