@@ -58,3 +58,9 @@ $(function() {
       document.getElementById('yarn').style.height = right;
   }
 });
+
+//Set the width of the image no mobile
+$(function() {
+  var width = $('#width-reference');
+  $('.img-wrapper').css("width", width.width() + 4);
+});
