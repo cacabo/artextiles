@@ -89,6 +89,11 @@
         right: 5vw;
         height: 20vh;
     }
+
+    .form-wrapper {
+      border-left: 0px;
+      padding-left: 0px;
+    }
 }
 
 
@@ -101,7 +106,7 @@
         display: none;
     }
     .display-mobile {
-        display=block;
+        display: block;
     }
     .bord-left {
         border-top: 1px solid #D8D8D8;
@@ -132,6 +137,11 @@
         right: 5vw;
         height: 20vh;
     }
+
+    .form-wrapper {
+      border-left: 0px;
+      pading-left: 0px;
+    }
 }
 
 @media screen and (min-width: 991px) {
@@ -145,5 +155,14 @@
         padding: 0px;
         padding-left: 5vh;
         padding-bottom: 5vh;
+    }
+
+    .form-wrapper {
+      border-left: 1px solid #D8D8D8;
+      padding-left: 2.5vw;
+    }
+
+    .bottom-pad {
+      padding-bottom: 10vh;
     }
 }
