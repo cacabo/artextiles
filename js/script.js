@@ -46,3 +46,15 @@ $(function() {
   var ref = $('#quality-text');
   $('#quality-img').css("height", ref.height());
 });
+
+//Set height of image wrapper to that of the quality text
+$(function() {
+  var right = document.getElementById('services').style.height;
+  var left = document.getElementById('yarn').style.height;
+  if(left > right) {
+      document.getElementById('services').style.height = left;
+  }
+  else {
+      document.getElementById('yarn').style.height = right;
+  }
+});
