@@ -100,6 +100,10 @@ a, a:hover {
     margin: 0 auto;
 }
 
+.curve {
+  border-radius: 2px;
+}
+
 
 /******************************
     NAVIGATION
