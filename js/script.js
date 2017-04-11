@@ -9,23 +9,24 @@ $(function() {
 
 });
 
-
-// Display welcome section upon scrolling a small amount
-// Not displayed to begin with
-// $(function() {
-//   $('#welcome').fadeOut(0);
-// })
-
-//Shifting the welcome section up upon scroll:
-
+//Shifting the welcome section up upon scroll
+//And adjusting navbar height
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 20) {
     $('#welcome').css("top", "-15vh");
     $('.text.home').css("padding-top", "30vh");
+    $('.navbar').css("padding", "0px 0px");
+    $('.navbar').css("-ms-transform", "scale(1, 1)");
+    $('.navbar').css("-webkit-transform", "scale(1, 1)");
+    $('.navbar').css("transform", "scale(1, 1)");
   } else {
     $('#welcome').css("top", "0in");
     $('.text.home').css("padding-top", "40vh");
+    $('.navbar').css("padding", "10px 0px");
+    $('.navbar').css("-ms-transform", "scale(1.01, 1.015)");
+    $('.navbar').css("-webkit-transform", "scale(1.01, 1.015)");
+    $('.navbar').css("transform", "scale(1.01, 1.015)");
   }
 });
 

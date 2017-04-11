@@ -112,22 +112,44 @@ nav li a {
 
 .navbar {
     background: white;
+    padding: 10px 0px;
+    transition: all 0.25s ease;
+    -ms-transform: scale(1.05, 1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari */
+    transform: scale(1.05, 1.05);
+}
+
+.navbar-header a.navbar-brand {
+  transition: all 0.25s ease;
+}
+
+a.navbar-brand:hover {
+  color: black !important;
 }
 
 .navbar, .navbar-collapse {
     overflow: hidden !important;
 }
 
+/*Give some extra padding to the dropdown nav*/
+.navbar-collapse.collapse.in {
+  margin-bottom: 2.5vh;
+}
+
 .navbar-header img {
+    transition: all 0.25s;
     height: 48px;
     padding-right: 18px;
+    padding-left: 10px;
     width: auto;
     float: left;
 }
 
 .navbar-fixed-top {
     border: 0px solid transparent;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .active a {
@@ -167,7 +189,7 @@ button.navbar-toggle {
 
 .navbar-toggle .icon-bar {
     width: 22px;
-    transition: all 0.2s;
+    transition: all 0.25s;
 }
 
 .navbar-toggle .top-bar {
@@ -287,14 +309,9 @@ button.navbar-toggle {
 
 .text.home {
     color: white;
-    padding-top: 40vh;
+    padding-top: 35vh;
     margin: 0px 25% 0px 10%;
     transition: all 0.5s ease;
-}
-
-.text.home h1 {
-    font-size: 500%;
-    font-style: italic;
 }
 
 .text.home h3 {
@@ -417,11 +434,11 @@ textarea.form-control:focus, input.form-control:focus {
 
 .btn#submit:hover, .btn#submit:active {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
-    -ms-transform: scale(1.015, 1.015);
+    -ms-transform: scale(1.01, 1.015);
     /* IE 9 */
-    -webkit-transform: scale(1.015, 1.015);
+    -webkit-transform: scale(1.01, 1.015);
     /* Safari */
-    transform: scale(1.015, 1.015);
+    transform: scale(1.01, 1.015);
 }
 
 .button-wrapper {

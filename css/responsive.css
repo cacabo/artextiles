@@ -94,6 +94,16 @@
       border-left: 0px;
       padding-left: 0px;
     }
+
+    .text.home {
+        padding-top: 30vh;
+        margin: 0px 15% 0px 15%;
+    }
+
+    .text.home h3 {
+        font-size: 350%;
+        border-left: 6px solid white;
+    }
 }
 
 
@@ -141,6 +151,16 @@
     .form-wrapper {
       border-left: 0px;
       pading-left: 0px;
+    }
+
+    .text.home {
+        padding-top: 30vh;
+        margin: 0px 15% 0px 15%;
+    }
+
+    .text.home h3 {
+        font-size: 350%;
+        border-left: 6px solid white;
     }
 }
 
