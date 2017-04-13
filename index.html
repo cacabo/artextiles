@@ -218,6 +218,9 @@
                                                     <button type="submit" id="submit" value="Send" class="btn">Submit</button>
                                                 </div>
                                             </div>
+
+                                            <input type="hidden" name="_next" value="intex.html#contact"/>
+                                            <input type="hidden" name="_subject" value="Email received from artextiles.us"/>
                                         </form>
                                     </div>
                                 </div>
@@ -251,7 +254,14 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-        smoothScroll.init();
+    smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 600, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 70, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    callback: function ( anchor, toggle ) {} // Function to run after scrolling
+    });
 
         function auto_grow(element) {
             element.style.height = "10px";
