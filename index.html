@@ -70,7 +70,7 @@
 
     <div class="section" id="home">
         <img src="img/space.jpg">
-        <div class="text home">
+        <div class="text home" id = "text-home">
             <h3>AR Textiles Ltd. is a global leader in state of the art textile production.</h3>
         </div>
     </div>
@@ -219,8 +219,8 @@
                                                 </div>
                                             </div>
 
-                                            <input type="hidden" name="_next" value="intex.html#contact"/>
-                                            <input type="hidden" name="_subject" value="Email received from artextiles.us"/>
+                                            <input type="hidden" name="_next" value="intex.html#contact" />
+                                            <input type="hidden" name="_subject" value="Email received from artextiles.us" />
                                         </form>
                                     </div>
                                 </div>
@@ -253,20 +253,25 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
-    smoothScroll.init({
-      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-      speed: 600, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutCubic', // Easing pattern to use
-      offset: 70, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-    callback: function ( anchor, toggle ) {} // Function to run after scrolling
-    });
+        smoothScroll.init({
+            selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+            selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+            speed: 600, // Integer. How fast to complete the scroll in milliseconds
+            easing: 'easeInOutCubic', // Easing pattern to use
+            offset: 70, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            callback: function(anchor, toggle) {} // Function to run after scrolling
+        });
 
         function auto_grow(element) {
             element.style.height = "10px";
             element.style.height = (element.scrollHeight) + "px";
         };
+
+        window.sr = ScrollReveal();
+        sr.reveal('#yarn');
+        sr.reveal('#services');
     </script>
 </body>
 
