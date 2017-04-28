@@ -463,6 +463,7 @@ textarea.form-control:focus, input.form-control:focus {
 ******************************/
 
 footer {
+    margin-top: 5vh;
     border-top: 1px solid whitesmoke;
     padding: 18px;
     background: #003399 !important;
@@ -502,7 +503,7 @@ footer a:hover {
 }
 
 .foot-bottom {
-    height: 4vh;
+    height: 5vh;
     background: #002266;
     width: 100%;
 }
