@@ -465,10 +465,44 @@ textarea.form-control:focus, input.form-control:focus {
 footer {
     border-top: 1px solid whitesmoke;
     padding: 18px;
-    text-align: center;
-    background: white !important;
+    background: #003399 !important;
+}
+
+.footer-nav {
+  margin: auto;
+}
+
+footer ul {
+  padding: 5vh 0;
+  list-style: none;
+  font-size: 150%;
+}
+
+footer li {
+  float: left;
+  padding: 0px 18px;
 }
 
 footer h5 {
+  padding-left: 18px;
+    padding-top: 5vh;
     font-weight: 300;
+    color: gainsboro;
+}
+
+footer a {
+  color: gainsboro;
+  font-weight: 400;
+  transition: all 0.5s ease !important;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none !important;
+}
+
+.foot-bottom {
+  height: 4vh;
+  background: #002266;
+  width: 100%;
 }
