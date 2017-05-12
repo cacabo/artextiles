@@ -1,13 +1,12 @@
 //Disable horizontal scroll (caused by overflow by box)
-$(function() {
-    var $body = $(document); //Select the document
-    $body.bind('scroll', function() {
-        if ($body.scrollLeft() !== 0) {
-            $body.scrollLeft(0); //Set scroll left to 0
-        }
-    });
-
-});
+// $(function() {
+//     var $body = $(document); //Select the document
+//     $body.bind('scroll', function() {
+//         if ($body.scrollLeft() !== 0) {
+//             $body.scrollLeft(0); //Set scroll left to 0
+//         }
+//     });
+// });
 
 //Shifting the welcome section up upon scroll
 //And adjusting navbar height
@@ -24,9 +23,9 @@ $(document).scroll(function() {
         $('#welcome').css("top", "0in");
         $('.text.home').css("padding-top", "40vh");
         $('.navbar').css("padding", "10px 0px");
-        $('.navbar').css("-ms-transform", "scale(1.01, 1.015)");
-        $('.navbar').css("-webkit-transform", "scale(1.01, 1.015)");
-        $('.navbar').css("transform", "scale(1.01, 1.015)");
+        $('.navbar').css("-ms-transform", "scale(1, 1.015)");
+        $('.navbar').css("-webkit-transform", "scale(1, 1.015)");
+        $('.navbar').css("transform", "scale(1, 1.015)");
     }
 });
 

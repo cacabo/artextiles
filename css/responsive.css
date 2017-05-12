@@ -71,19 +71,7 @@
         height: auto;
         padding-bottom: 7.5vh;
     }
-    /*Having blue take up entire background image not just a triangle*/
-    .blue {
-        opacity: .7;
-        height: 100vh;
-        width: 100vw;
-        top: 0px;
-        left: 0px;
-        -ms-transform: rotate(0deg);
-        /* IE 9 */
-        -webkit-transform: rotate(0deg);
-        /* Safari */
-        transform: rotate(0deg);
-    }
+
     #about-img, #quality-img {
         width: 100vw;
         right: 5vw;
@@ -129,19 +117,7 @@
         height: auto;
         padding-bottom: 7.5vh;
     }
-    /*Having blue take up entire background image not just a triangle*/
-    .blue {
-        opacity: .7;
-        height: 100vh;
-        width: 100vw;
-        top: 0px;
-        left: 0px;
-        -ms-transform: rotate(0deg);
-        /* IE 9 */
-        -webkit-transform: rotate(0deg);
-        /* Safari */
-        transform: rotate(0deg);
-    }
+    
     #about-img, #quality-img {
         width: 100vw;
         right: 5vw;
