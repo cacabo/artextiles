@@ -66,14 +66,17 @@ $contactForm.submit(function(e) {
 		dataType: 'json',
 		beforeSend: function() {
 			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+      $('.alert-loading').fadein(250);
 		},
 		success: function(data) {
 			$contactForm.find('.alert--loading').hide();
 			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+      $('.alert-success').fadein(250);
 		},
 		error: function(err) {
 			$contactForm.find('.alert--loading').hide();
 			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+      $('.alter-error').fadein(250);
 		}
 	});
 });
