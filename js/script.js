@@ -1,17 +1,19 @@
 //Shifting the welcome section up upon scroll
 //And adjusting navbar height
+var p1 = $('#text-home').css("padding-top");
+var p2 = (parseInt(p1) - 50) + "px";
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 20) {
         $('#welcome').css("top", "-15vh");
-        $('.text.home').css("padding-top", "30vh");
+        $('.text.home').css("padding-top", p2);
         $('.navbar').css("padding", "0px 0px");
         $('.navbar').css("-ms-transform", "scale(1, 1)");
         $('.navbar').css("-webkit-transform", "scale(1, 1)");
         $('.navbar').css("transform", "scale(1, 1)");
     } else {
         $('#welcome').css("top", "0in");
-        $('.text.home').css("padding-top", "40vh");
+        $('.text.home').css("padding-top", p1);
         $('.navbar').css("padding", "10px 0px");
         $('.navbar').css("-ms-transform", "scale(1, 1.015)");
         $('.navbar').css("-webkit-transform", "scale(1, 1.015)");
@@ -58,28 +60,25 @@ $(function() {
 //Credit: https://gist.github.com/edmundojr/975b08c39ab0a7a1b514
 var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: 'https://formspree.io/cameron.cabo@yahoo.com',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-      $('.alert--loading').slideDown(250);
-		},
-		success: function(data) {
-			$contactForm.find('.alert--loading').hide();
-			// $('#contact-info').append('<div class="alert alert--success">Message sent!</div>');
-      // $('.alert--success').slideDown(250);
-      // $contactForm.slideUp(250);
-      $contactForm.html('<div class="alert alert--success">Message sent!</div>');
-      $('.alert--success').slideDown(250);
-		},
-		error: function(err) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-      $('.alter--error').slideDown(250);
-		}
-	});
+    e.preventDefault();
+    $.ajax({
+        url: 'https://formspree.io/cameron.cabo@yahoo.com',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+            $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+            $('.alert--loading').slideDown(250);
+        },
+        success: function(data) {
+            $contactForm.find('.alert--loading').hide();
+            $contactForm.html('<div class="alert alert--success">Message sent!</div>');
+            $('.alert--success').slideDown(250);
+        },
+        error: function(err) {
+            $contactForm.find('.alert--loading').hide();
+            $contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
+            $('.alert--error').slideDown(250);
+        }
+    });
 });

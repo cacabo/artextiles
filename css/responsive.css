@@ -71,24 +71,20 @@
         height: auto;
         padding-bottom: 7.5vh;
     }
-
     #about-img, #quality-img {
         width: 100vw;
         right: 5vw;
         height: 20vh;
     }
-
     .form-wrapper {
-      border-left: 0px;
-      padding-left: 0px;
+        border-left: 0px;
+        padding-left: 0px;
     }
-
-    .text.home {
+    #text-home {
         padding-top: 30vh;
         margin: 0px 15% 0px 15%;
     }
-
-    .text.home h3 {
+    #text-home h3 {
         font-size: 350%;
         border-left: 6px solid white;
     }
@@ -117,24 +113,20 @@
         height: auto;
         padding-bottom: 7.5vh;
     }
-
     #about-img, #quality-img {
         width: 100vw;
         right: 5vw;
         height: 20vh;
     }
-
     .form-wrapper {
-      border-left: 0px;
-      pading-left: 0px;
+        border-left: 0px;
+        pading-left: 0px;
     }
-
-    .text.home {
+    #text-home {
         padding-top: 30vh;
         margin: 0px 15% 0px 15%;
     }
-
-    .text.home h3 {
+    #text-home h3 {
         font-size: 350%;
         border-left: 6px solid white;
     }
@@ -144,6 +136,7 @@
 /******************************
 	For larger screen sizes
 ******************************/
+
 @media screen and (min-width: 991px) {
     .no-display-mobile {
         display: block;
@@ -156,17 +149,34 @@
         padding-left: 5vh;
         padding-bottom: 5vh;
     }
-
     .form-wrapper {
-      border-left: 1px solid #D8D8D8;
-      padding-left: 2.5vw;
+        border-left: 1px solid #D8D8D8;
+        padding-left: 2.5vw;
     }
-
     .bottom-pad {
-      padding-bottom: 10vh;
+        padding-bottom: 10vh;
     }
 }
+
 
 /******************************
 	Formatting intro text to fit smaller screens
 ******************************/
+
+@media screen and (max-width: 480px) {
+    #text-home {
+        padding-top: 35vh;
+    }
+    #text-home h3 {
+        font-size: 250%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    #text-home {
+        padding-top: 32.5vh;
+    }
+    #text-home h3 {
+        font-size: 300%;
+    }
+}

@@ -342,10 +342,7 @@ button.navbar-toggle {
     top: -1in;
 }
 
-#about {}
-
 #about-img {
-    overflow: hidden;
     background-image: url(../img/machine.jpg);
 }
 
@@ -354,8 +351,15 @@ button.navbar-toggle {
 }
 
 #quality-img {
-    overflow: hidden;
     background-image: url(../img/yarn.jpg);
+}
+
+#about-img, #quality-img {
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #products {}
@@ -459,6 +463,16 @@ textarea.form-control:focus, input.form-control:focus {
     border-radius: 4px;
     padding: 2vh;
     margin: 0;
+}
+
+.alert--success {
+    color: #006600;
+    background: #ADFFC2;
+}
+
+.alert--error {
+    color: #A3002E;
+    background: #FFCCCC;
 }
 
 .thanks {
