@@ -435,7 +435,8 @@ textarea.form-control:focus, input.form-control:focus {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, .3);
 }
 
-.btn#submit:hover, .btn#submit:active {
+.btn#submit:hover, .btn#submit:active, .btn#submit:visited {
+    border: 0px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
     -ms-transform: scale(1.01, 1.015);
     /* IE 9 */
