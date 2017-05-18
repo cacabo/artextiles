@@ -1,4 +1,4 @@
-##AR Textiles
+## AR Textiles
 
 AR Textiles is a global distributor of yarns, knits, and weaves. I was tasked with modernizing their marketing materials through redesigned cards, logos, and signage. Additionally, I made a website so the company could better align itself with a more modern industry and more tech-based consumer demands.
 
