@@ -90,7 +90,7 @@ a, a:hover {
 }
 
 .img-wrapper {
-    width: calc(100vw - 50px);
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -448,9 +448,16 @@ textarea.form-control:focus, input.form-control:focus {
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 4vh;
     text-align: center;
 }
 
+.alert {
+    display: none;
+    background: whitesmoke;
+    border-radius: 4px;
+    padding: 2vh;
+}
 
 /******************************
     FOOTER
