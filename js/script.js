@@ -1,13 +1,3 @@
-//Disable horizontal scroll (caused by overflow by box)
-// $(function() {
-//     var $body = $(document); //Select the document
-//     $body.bind('scroll', function() {
-//         if ($body.scrollLeft() !== 0) {
-//             $body.scrollLeft(0); //Set scroll left to 0
-//         }
-//     });
-// });
-
 //Shifting the welcome section up upon scroll
 //And adjusting navbar height
 $(document).scroll(function() {
@@ -67,29 +57,23 @@ $(function() {
 //AJAX for formspree
 //Credit: https://gist.github.com/edmundojr/975b08c39ab0a7a1b514
 var $contactForm = $('#contact-form');
-var errorSub = false;
 $contactForm.submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-        url: '//formspree.io/ccabo@wharton.upenn.edu',
-        method: 'POST',
-        data: $(this).serialize(),
-        dataType: 'json',
-        success: function(data) {
-            // $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--success">Message sent!</div>');
-            $('.alert').slideDown(500).delay(1500).slideUp(500);
-            // $contactForm.append("<h3 class='thanks'>Thanks for the email. We'll get back to you as soon as possible.</h3>");
-            // $contactForm.slideUp(500);
-            // $('.thanks').delay(1500).slideDown(500);
-        },
-        error: function(err) {
-            // $contactForm.find('.alert--loading').hide();
-            if (!errorSub) {
-              $contactForm.append('<div class="alert alert--error">Oops! There was an error.</div>');
-              errorSub = true;
-            }
-            $('.alert').slideDown(500).delay(1500).slideUp(500);
-        }
-    });
+	e.preventDefault();
+	$.ajax({
+		url: 'https://formspree.io/cameron.cabo@yahoo.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+		}
+	});
 });
