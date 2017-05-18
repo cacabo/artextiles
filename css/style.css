@@ -365,8 +365,6 @@ button.navbar-toggle {
     margin-bottom: .5in;
 }
 
-#quality {}
-
 .quality {
     z-index: 4;
     background: white;
@@ -407,6 +405,7 @@ textarea.form-control {
     overflow: hidden;
     min-height: 80px;
     max-height: 50vh;
+    color: black;
 }
 
 textarea.form-control:focus, input.form-control:focus {
@@ -414,6 +413,7 @@ textarea.form-control:focus, input.form-control:focus {
     border: 0px solid transparent;
     border-bottom: 1px solid black;
     box-shadow: none;
+    color: black;
 }
 
 .btn#submit {
@@ -457,6 +457,11 @@ textarea.form-control:focus, input.form-control:focus {
     background: whitesmoke;
     border-radius: 4px;
     padding: 2vh;
+    margin: 0;
+}
+
+.thanks {
+  display: none;
 }
 
 /******************************

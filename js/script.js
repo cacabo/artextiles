@@ -64,36 +64,32 @@ $(function() {
     $('.img-wrapper').css("width", width.width() + 4);
 });
 
-//AJAX for the formspree
-// $.ajax({
-//     url: "https://formspree.io/you@email.com",
-//     method: "POST",
-//     data: {message: "hello!"},
-//     dataType: "json"
-// });
-
+//AJAX for formspree
 //Credit: https://gist.github.com/edmundojr/975b08c39ab0a7a1b514
 var $contactForm = $('#contact-form');
+var errorSub = false;
 $contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: '//formspree.io/ccabo@wharton.upenn.edu',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		// beforeSend: function() {
-		// 	$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-    //   $('.alert').slideDown(500).delay(1500).slideUp(500);
-		// },
-		success: function(data) {
-			// $contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-      $('.alert').slideDown(500).delay(1500).slideUp(500);
-		},
-		error: function(err) {
-			// $contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Oops! There was an error.</div>');
-      $('.alert').slideDown(500).delay(1500).slideUp(500);
-		}
-	});
+    e.preventDefault();
+    $.ajax({
+        url: '//formspree.io/ccabo@wharton.upenn.edu',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function(data) {
+            // $contactForm.find('.alert--loading').hide();
+            $contactForm.append('<div class="alert alert--success">Message sent!</div>');
+            $('.alert').slideDown(500).delay(1500).slideUp(500);
+            // $contactForm.append("<h3 class='thanks'>Thanks for the email. We'll get back to you as soon as possible.</h3>");
+            // $contactForm.slideUp(500);
+            // $('.thanks').delay(1500).slideDown(500);
+        },
+        error: function(err) {
+            // $contactForm.find('.alert--loading').hide();
+            if (!errorSub) {
+              $contactForm.append('<div class="alert alert--error">Oops! There was an error.</div>');
+              errorSub = true;
+            }
+            $('.alert').slideDown(500).delay(1500).slideUp(500);
+        }
+    });
 });
