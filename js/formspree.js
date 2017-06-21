@@ -4,7 +4,7 @@ var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: 'https://formspree.io/cameron.cabo@yahoo.com',
+        url: 'https://formspree.io/info@artextiles.us',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
