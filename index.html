@@ -1,312 +1,361 @@
 <!DOCTYPE html>
-
-<!--
-	Code by Cameron Cabo, 2017, all rights reserved
-
-	INDEX
--->
-
 <html>
 
 <head>
-    <title>AR Textiles Ltd.</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="AR Textiles is a leader in state of the art textiles production.">
+    <meta name="keywords" content="AR,Textiles,AR Textiles,Suru Bhardwaj,Canada,Cloth">
+    <meta name="author" content="Cameron Cabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- DETAILS -->
-    <meta charset="UTF-8">
-    <meta name="description" content="AR Textiles is one of the worlds most modern, state of the art textile mills. Located in Robersonville NC, USA, we are close to both cotton fields and a port which enables us to supply globally.">
-    <meta name="keywords" content="AR Textiles, textiles, cotton, Gildan, textile">
-    <meta name="author" content="AR Textiles">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- open graph tags -->
+    <meta property="og:title" content="AR Textiles">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://artextiles.us">
+    <meta property="og:image" content="/img/logo.png">
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- other configuration -->
+    <title>AR Textiles</title>
 
-    <!-- STYLE -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
-
-    <!--  FAVICONS -->
+    <!-- favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/297cffcc6b.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="banner" id="top">
-        <div class="container head">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-      	            <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>
-	              </button>
-                <img src="img/logo.svg">
-                <div class="divider" style="float:left; margin-right: 18px;"></div>
-                <a class="navbar-brand" href="index.html">Textiles Ltd.</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a data-scroll href="#home">Home</a></li>
-                    <li><a data-scroll href="#welcome">Welcome</a></li>
-                    <li><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#quality">Quality</a></li>
-                    <li><a data-scroll href="#products">Products</a></li>
-                    <li><a data-scroll href="#contact">Contact</a></li>
-                    <li><a class="lang bord-left">Español</a></li>
-                    <li><a class="lang">Mandarin</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded special fixed-top">
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+            <span class="sr-only" Toggle navigation></span>
+        </button>
+        <a data-scroll class="navbar-brand" href="#home">
+            <img src="img/logo.svg" width="34" height="34" class="d-inline-block align-top" alt=""> Textiles
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#quality">Quality</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Spanish</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Mandarin</a>
+                </li> -->
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <div class="spacer"></div>
-
-    <div class="section" id="home">
-        <img src="img/space.jpg">
-        <div class="text home" id="text-home">
-            <h3>AR Textiles Ltd. is a global leader in state of the art textile production.</h3>
+    <!-- hero -->
+    <div class="hero" id="home">
+        <div class="gradient">
+            <div class="space"></div>
+            <div class="container pad-25">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="special">Welcome to AR Textiles</h1>
+                        <h1>We are leaders in state of the art textile production.</h1>
+                    </div>
+                </div>
+            </div>
+            <a data-scroll href="#about" class="circle">
+                <i class="fa fa-chevron-down fa-fw fa-2x" aria-hidden: "true"></i>
+            </a>
         </div>
     </div>
 
-    <div class="blue"></div>
+    <div class="space"></div>
+    <div class="space"></div>
 
-    <div class="container">
-        <div class="row top-pad">
-            <div class="col-xs-10 col-xs-push-1 col-md-8 col-md-push-2 col-xl-6 col-xl-push-3">
-                <div class="section" id="welcome">
-                    <h1>Welcome to AR Textiles</h1>
-                    <h4>AR Textiles Ltd. has one of the most modern mills in the world. The plant is located in Robersonville NC, USA. The proximity to the cotton fields and the port of Norfolk enables AR to supply high quality yarn throughout the world.
-                      <br><br>
-                      Our customers benefit from automated processes with minimal manual intervention. Our automated packaging system, delivering large package sizes, combined with Digi winding make it especially attractive to the market.
-                    </h4>
-                </div>
+    <!-- intro text -->
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h1 class="special">We're all about logistics</h1>
+                <p class="bigger">
+                    We operate one of the most modern mills in the world. The plant is located in <a href="https://en.wikipedia.org/wiki/Robersonville,_North_Carolina" target="_blank">Robersonville NC, USA.</a> Our proximity to both cotton fields and
+                    the port of <a href="https://en.wikipedia.org/wiki/Norfolk,_Virginia" target="_blank">Norfolk</a> enables us to supply high quality yarn throughout the world.
+                </p>
+                <p class="bigger">
+                    Our customers benefit from automated processes with minimal manual intervention. Our automated packaging system, large-volume package sizes, and use of <a href="https://www.showmarkcorp.com/product/digispooler/" target="_blank">Digi winding</a>                    make our products especially attractive to the market.
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="section" id="about">
-        <div class="container">
-            <div class="row nopadding">
-                <div class="col-xs-12 col-md-7 line-above bottom-pad" id="about-text">
-                    <h1>About</h1>
-                    <p>
-                        The plant has a capacity to produce 2.6 million lbs (12,000 tonnes) of high quality yarn per annum, with a count range between 6-30s Ne with the state-of-the-art technology from the leading Textile Machinery manufactures like Schlafhorst, Trutzschler
-                        Electrojet and Pneumafil. The complete textile laboratory is from Uster Switzerland.
-                        <br><br> The current market demand for contamination free, quality yarn is achieved by using quality US grown cotton, selected after testing in the laboratory for staple length, micronaire, tenacity, trash content and contamination.
-                        The latest generation of opening from Trutzschler and spinning using the Saurer ACO 8, ensures the highest quality of yarn.
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <div class="about">
+        <div class="bg" id="building"></div>
+        <div class="space"></div>
+        <div class="container pad-25">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-4">
+                    <h1 class="special white">About our plant</h1>
+                    <p class="white">
+                        Our plant has a capacity to produce 2.6 million lbs (12,000 tonnes) of high quality yarn per annum, with a count range between 6-30s Ne, all made with state-of-the-art technology from leading textile machinery manufactures like
+                        <a href="http://www.schlafhorst.saurer.com/en/schlafhorst/" target="_blank">Schlafhorst,</a> <a href="http://www.truetzschler.de/en/" target="_blank">Trutzschler,</a> <a href="http://www.pspmarketing.com/electro-jet-textile-machinery/"
+                            target="_blank">Electro-jet,</a> and <a href="http://www.pneumafil.com/" target="_blank">Pneumafil.</a> The complete textile laboratory is from Uster Switzerland.
                     </p>
-                </div>
-                <div class="col-xs-12 col-md-4 col-md-push-1 img-wrap-right">
-                    <div class="col-xs-12 nopadding img shade no-display-mobile img-responsive" id="about-img">
-                    </div>
-                    <div class="col-xs-12 img-wrapper">
-                        <img src="img/machine.jpg" class="img-responsive display-mobile shade">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="top-pad">
-        <div class="section" id="quality">
-            <div class="container">
-                <div class="row nopadding">
-                    <div class="col-xs-12 col-md-5 line-above bottom-pad" id="quality-text">
-                        <h1>Quality Assurance</h1>
-                        <p>We are equipped with the latest testing equipment to monitor and maintain a high-quality product from raw cotton to finished yarn. Our process specialists and technicians closely monitor every stage of production using the state-of-the-art
-                            Uster laboratory tools. Uster statistics make a major contribution because the Uster testing instruments automatically rate the tested yarn quality against Uster statistics.</p>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-md-push-1 img-wrap-right" id="width-reference">
-                        <div class="img shade no-display-mobile img-responsive" id="quality-img">
+                    <p class="white">
+                        The current market demand for contamination free, quality yarn is achieved by using peak US grown cotton, selected after testing in the laboratory for staple length, micronaire, tenacity, trash content and contamination. High tech opening using Trutzschler
+                        machines and spinning using the Saurer ACO 8 ensures the highest quality of yarn.
+                    </p>
+                    <a href="https://www.google.com/maps/place/AR+Textiles,+Ltd/@35.824491,-77.208498,15z/data=!4m5!3m4!1s0x0:0xa46a6bb79e6d2cb8!8m2!3d35.824491!4d-77.208498" target="_blank">
+                        <div class="half half-text special">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Find us here
                         </div>
-                        <div class="col-xs-12 img-wrapper">
-                            <img src="img/yarn.jpg" class="img-responsive display-mobile shade">
-                        </div>
-                    </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </div>
-    </div>
-    <div class="top-pad">
-        <div class="section" id="products">
-            <div class="container">
-                <div class="row nopadding">
-                    <div class="col-xs-12 line-above">
-                        <h1>Products</h1>
-                        <div class="col-xs-12 col-md-6 pad-all">
-                            <div class="shaddow pad-all curve" id="services">
-                                <img src="img/services.svg" class="img-responsive bot-pad">
-                                <h2>Services</h2>
-                                <ul>
-                                    <li>Samples and technical specifications of all products</li>
-                                    <li>Regular and prompt correspondence/communication</li>
-                                    <li>Frequent visits to all our valued customers for personal interaction and better understanding</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 pad-all">
-                            <div class="shaddow pad-all curve" id="yarn">
-                                <img src="img/product.svg" class="img-responsive bot-pad">
-                                <h2>Yarn, knits, weaves</h2>
-                                <ul>
-                                    <li>100% cotton open end single yarn</li>
-                                    <li>Sample yarn for weaving and knitting</li>
-                                    <li>Counts range NE 6-30 /1 for carded knitting and weaving</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
+            <div class="space"></div>
         </div>
     </div>
+
     <div class="space"></div>
     <div class="space"></div>
+
+    <!-- quality assurance -->
+    <div class="container" id="quality">
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h1 class="special">Quality comes first</h1>
+                <p class="bigger">
+                    We are equipped with the latest testing equipment to monitor and maintain a high-quality product from raw cotton to finished yarn. Our process specialists and technicians closely monitor every stage of production using the state-of-the-art Uster laboratory
+                    tools. Uster statistics make a major contribution because the Uster testing instruments automatically rate the tested yarn quality against Uster statistics.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <a data-scroll href="#product" class="circle">
+        <i class="fa fa-angle-double-down fa-fw fa-2x" aria-hidden: "true"></i>
+    </a>
+
+    <div class="products" id="product">
+        <div class="bg" id="yarn"></div>
+        <div class="space"></div>
+        <div class="container pad-25">
+            <div class="row">
+                <div class="col-12 col-lg-6 pad">
+                    <h1 class="special white">Services</h1>
+                    <ul class="white bigger">
+                        <li>Samples and technical specifications of all products.</li>
+                        <li>Regular and prompt correspondence.</li>
+                        <li>Frequent visits to all of our valued customers for personalized service.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 pad">
+                    <h1 class="special white">Yarn, knits, weaves</h1>
+                    <ul class="white bigger">
+                        <li>100% cotton open end single yarn.</li>
+                        <li>Sample yarn for weaving and knitting.</li>
+                        <li>Counts range NE 6-30/1 for carded knitting and weaving.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-1 col-lg-6">
+                <h1 class="special">Contact us</h1>
+                <div class="space"></div>
+                <div class="form-wrapper">
+                    <form id="contact-form" action="https://formspree.io/cameron.cabo@yahoo.com" method="post">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="Name" class="form-control" id="inputName" required>
+                                <label for="inputName">Name*</label>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <input type="email" name="_replyto" class="form-control" id="inputEmail" required>
+                                <label for="inputEmail">Email*</label>
+                            </div>
+                        </div>
+                        <!-- closing row -->
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="tel" name="Phone" class="form-control" id="inputPhone">
+                                <label for="inputPhone">Phone number</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="Company" class="form-control" id="inputCompany">
+                                <label for="inputCompany">Company name</label>
+                            </div>
+                        </div>
+                        <!-- closing row -->
+
+                        <input type="text" name="_subject" class="form-control" id="inputSubject" required>
+                        <label for="inputSubject">Subject*</label>
+                        <div class="empty-space"></div>
+                        <label id="messageLabel" for="inputMessage">Message*</label>
+                        <textarea rows="1" type="message" name="Message" class="form-control" id="inputMessage" id="ta" required></textarea>
+
+                        <input type="text" name="_gotcha" style="display:none">
+                        <div class="space"></div>
+                        <button type="submit" id="submit" value="Send" class="btn special">Submit</button>
+                        <div class="space"></div>
+                    </form>
+                    <div id="errors">
+                        <div class="space"></div>
+                        <div class="half-space"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="section" id="contact">
-                    <div class="row bottom-pad">
-                        <div class="col-xs-12 col-md-10 col-md-push-1 top-pad">
-                            <h1>Contact</h1>
-                        </div>
-                        <div class="row nopadding bottom-pad">
-                            <div class="col-xs-12 col-md-3 col-md-push-1 bot-pad" id="contact-info">
-                                <p>
-                                    <h4><strong>How to reach us</strong></h4> AR Textiles Ltd.<br> 8902 US Hwy 64 Alt W<br> Robersonville, NC 27871, USA.<br>
-                                    <strong>Office:</strong> <a href="tel:2527950285">(252) 795-0285</a><br>
-                                    <strong>Fax:</strong> <a href="tel:2527950288">(252) 795-0288</a><br>
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-md-7 col-md-push-1 border-right bot-pad">
-                                <div class="form-wrapper">
-                                    <form id="contact-form" action="https://formspree.io/cameron.cabo@yahoo.com" method="post">
-                                        <h4><strong>Send us an email</strong></h4>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <input type="text" name="Name" class="form-control" id="inputName" placeholder="Full Name" required>
-                                        </div>
-
-                                        <div class="col-xs-12 col-sm-6">
-                                            <input type="email" name="_replyto" class="form-control" id="inputEmail" placeholder="Your Email" required>
-                                        </div>
-
-                                        <div class="col-xs-12 col-sm-6">
-                                            <input type="tel" name="Phone" class="form-control" id="inputPhone" placeholder="Phone Number">
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-xs-12 col-sm-6">
-                                                <input type="text" name="Company" class="form-control" id="inputCompany" placeholder="Company Name">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-xs-12">
-                                                <input type="text" name="_subject" class="form-control" id="inputSubject" placeholder="Subject" required>
-                                            </div>
-                                            <div class="col-xs-12">
-                                                <textarea type="message" name="Message" class="form-control" id="inputMessage" placeholder="Message" id="ta" onkeyup="auto_grow(this)" required></textarea>
-                                            </div>
-                                        </div>
-
-                                        <input type="text" name="_gotcha" style="display:none" />
-
-                                        <div class="space"></div>
-
-                                        <div class="form-group row">
-                                            <div class="button-wrapper">
-                                                <button type="submit" id="submit" value="Send" class="btn">Submit</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-10 col-md-push-1 nopadding">
-                    <div class="map-wrapper">
-                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfzr4o-_9rokRuCxtnrdraqQ&key=AIzaSyDF8XBpLGumt9xjYiIjgxrm9WrgucOPClM" allowfullscreen></iframe>
-                    </div>
-                </div>
+            <div class="col-12 col-md-10 offset-md-1">
+                <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfzr4o-_9rokRuCxtnrdraqQ&key=AIzaSyDF8XBpLGumt9xjYiIjgxrm9WrgucOPClM" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
     <div class="space"></div>
     <div class="space"></div>
 
+    <!-- footer -->
     <footer>
+        <div class="space"></div>
+        <div class="half-space"></div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-lg-10 col-lg-push-1">
-                    <div class="row">
-                        <ul class="footer-nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#welcome">Welcome</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#quality">Quality</a></li>
-                            <li><a href="#products">Products</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <h5>AR Textiles &copy; 2017, All Rights Reserved.<br>Built by <a href="http://cameroncabo.com/" title="Learn more about Cameron">Cameron Cabo</a>.</h5>
-                    </div>
+                <!-- branding -->
+                <div class="col-12 col-lg-4">
+                    <h4 class="special white-text">AR Textiles Ltd.</h4>
+                    <p class="white-text">
+                        8902 US Hwy 64 Alt W<br> Robersonville, NC 27871, USA.
+                    </p>
+                    <p class="white-text">
+                        Office: <a href="tel:2527950285">(252)795-0285</a><br> Fax: <a href="tel:2527950288">(252)795-0288</a>
+                    </p>
+                    <div class="space"></div>
+                </div>
+
+                <!-- navigation -->
+                <div class="col-12 col-lg-4">
+                    <h4 class="white-text special">Navigation</h4>
+                    <ul class="footer-nav">
+                        <li><a data-scroll href="#home">Home</a></li>
+                        <li><a data-scroll href="#about">About</a></li>
+                        <li><a data-scroll href="#quality">Quality</a></li>
+                        <li><a data-scroll href="#products">Products</a></li>
+                        <li><a data-scroll href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="space"></div>
+                </div>
+
+                <!-- social -->
+                <div class="col-12 col-lg-4">
+                    <h4 class="white-text special">Connect with us</h4>
+                    <ul class="social-links">
+                        <li>
+                            <a href="mailto:info@artextiles.us"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="tel:2527950285"><i class="fa fa-fw fa-phone" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/AR+Textiles,+Ltd/@35.824491,-77.208498,15z/data=!4m5!3m4!1s0x0:0xa46a6bb79e6d2cb8!8m2!3d35.824491!4d-77.208498" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                </div>
+            </div>
+
+            <div class="white-line"></div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="white-text inline">
+                        AR Textiles Ltd. &copy; 2017, all rights reserved.
+                    </p>
+                    <p class="white-text credit">
+                        Website by <a href="http://cameroncabo.com/" title="Learn more about Cameron">Cameron Cabo.</a>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="foot-bottom"></div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- javascript -->
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/label.js"></script>
+    <script src="js/formspree.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/autosize.js"></script>
     <script>
         smoothScroll.init({
-            selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-            selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-            speed: 600, // Integer. How fast to complete the scroll in milliseconds
-            easing: 'easeInOutCubic', // Easing pattern to use
-            offset: 70, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-            callback: function(anchor, toggle) {} // Function to run after scrolling
+            speed: 500,
+            easing: 'easeInOutCubic',
+            offset: 54
         });
-
-        function auto_grow(element) {
-            element.style.height = "10px";
-            element.style.height = (element.scrollHeight) + "px";
-        };
     </script>
 </body>
 
