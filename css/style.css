@@ -269,8 +269,6 @@ input.form-control, textarea.form-control {
     border-radius: 0;
     border: 0px solid transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
     background: transparent;
 }
 
@@ -327,8 +325,6 @@ label#messageLabel.hasVal {
 
 #inputMessage {
     overflow: hidden;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 
 iframe {
