@@ -87,3 +87,13 @@
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
 }
+
+.flag {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.flag-white {
+  border: 2px solid white;
+  border-radius: 50%;
+}

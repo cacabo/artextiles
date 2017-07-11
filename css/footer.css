@@ -74,3 +74,15 @@ footer {
         text-align: left;
     }
 }
+
+.change-language {
+  width: 100%;
+  display: block;
+  clear: left;
+  padding-top: 2rem;
+}
+
+.change-language a {
+  color: white;
+  text-decoration: none;
+}
